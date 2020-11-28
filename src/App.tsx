@@ -1,11 +1,13 @@
 import React from 'react';
 
-function App() {
+import { Container, GlobalStyle } from './styles';
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <h1>New React App</h1>
-    </div>
+    <Container>
+      <h1>My Application</h1>
+    </Container>
   );
-}
+};
 
 export default App;
