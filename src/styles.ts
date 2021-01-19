@@ -1,13 +1,15 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
-  * {
-    box-sizing: border-box
-  }
-
-  body {
-    margin: 0;
-  }
+export const Container = styled.div`
+  display: flex;
 `;
 
-export const Container = styled.div``;
+export const Content = styled.div`
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 24px;
+
+  margin: 48px 32px;
+`;
